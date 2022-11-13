@@ -1,0 +1,67 @@
+.theatre-listing-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.theatre-listing-column-name {
+    display: flex;
+    margin: 10px 0;
+    padding: 0 10px;
+}
+
+.theatre-listing-index {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    width: 5%;
+}
+
+.theatre-listing-name {
+    min-width: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.theatre-listing-price {
+    display: flex;
+    align-items: center;
+    min-width: 10%;
+}
+
+.theatre-listing-shows {
+    display: flex;
+    align-items: center;
+}
+
+.theatre-listing-timing {
+    height: 50px;
+    width: 100px;
+    border: solid 1px;
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px 0 0;
+    padding: 0;
+
+    span {
+        color: green;
+    }
+}
+
+.table-heading {
+    font-weight: 600;
+}
+
+.movie-listing {
+    padding: 20px 0;
+
+    .movie-listing-title {
+        margin: 25px 0;
+    }
+}

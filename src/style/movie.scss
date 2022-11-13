@@ -1,0 +1,72 @@
+
+.movie-wrapper {
+  padding: 40px 0px;
+  .title {
+    margin-bottom: 34px;
+    font-weight: 600;
+    color: #353a3e;
+  }
+  .filter-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 36px;
+    @media (max-width: 576px) {
+      display: block;
+    }
+    .apply-btn {
+      padding: 10px 22px;
+      margin-right: 10px;
+    }
+    .clear-btn {
+      padding: 10px 22px;
+    }
+  }
+  .filter-by {
+    .txt {
+      color: #484848;
+      margin-bottom: 18px;
+    }
+    .filter-select {
+      display: flex;
+      @media (max-width: 576px) {
+        margin-bottom: 24px;
+      }
+      select {
+        margin-right: 16px;
+        width: 208px;
+        padding: 10px;
+      }
+    }
+  }
+  .sort-by {
+    @media (max-width: 576px) {
+      margin-bottom: 24px;
+    }
+    .text {
+      color: #484848;
+      margin-bottom: 18px;
+    }
+    select {
+      margin-right: 16px;
+      width: 160px;
+      padding: 10px;
+    }
+  }
+  .movie-table {
+    margin-bottom: 30px;
+    th, td {
+      padding: 16px;
+    }
+  }
+}
+
+.movie-info {
+  .movie-flex {
+    display: flex;
+    align-items: center;
+    p {
+      margin-right: 14px;
+    }
+  }
+}

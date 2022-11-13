@@ -1,0 +1,44 @@
+.add-locations {
+    display: inline-block;
+}
+
+.location-name {
+    display: inline-block;
+    background-color: #e3e3e3;
+    border-radius: 8px;
+    padding: 5px;
+    margin: 0 10px 10px 0;
+    min-width: 100px;
+    box-sizing: border-box;
+    border: solid 1px #e3e3e3;
+
+}
+
+.location-name-selected {
+    border-color: rgb(131, 185, 131);
+    background-color: rgb(214, 241, 214);
+}
+
+.location-name:hover {
+    cursor: pointer;
+    border-color: rgb(131, 185, 131);
+    background-color: rgb(214, 241, 214);
+
+}
+
+.theatre-details-content {
+    display: flex;
+    padding: 8px;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #f2f2f2;
+    margin-bottom: 10px;
+    
+    .theatre-name { 
+        flex: 1;
+    }
+
+    .theathre-action-btn {
+        margin-right: 10px;
+    }
+}
