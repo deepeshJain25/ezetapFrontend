@@ -77,7 +77,9 @@ const TheatreForm = (props) => {
             />
           </Form.Group>
           <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-            <Form.Label>Timings (Add times separated by Commas)</Form.Label>
+            <Form.Label>
+              Timings (Add times separated by Commas in 24 hour format)
+            </Form.Label>
             <Form.Control
               defaultValue={theatresDetails.shows || ""}
               onChange={(e) => {

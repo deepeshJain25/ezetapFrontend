@@ -29,8 +29,8 @@ const MovieListing = () => {
         {data && data.length ? (
           <>
             <h3 className="movie-listing-title">
-              Details of <b style={{ color: "green" }}>{movieName}</b> at{" "}
-              <b style={{ color: "blue" }}>{location}</b>
+              Theatre details of <b style={{ color: "green" }}>{movieName}</b>{" "}
+              at <b style={{ color: "blue" }}>{location}</b>
             </h3>
             <div className="theatre-listing-main">
               <div className="theatre-listing-column-name">
@@ -52,7 +52,7 @@ const MovieListing = () => {
         )}
       </div>
 
-      <Button variant="secondary" onClick={() => history.goBack()}>
+      <Button variant="outline-danger" onClick={() => history.goBack()}>
         Go Back
       </Button>
     </Container>
