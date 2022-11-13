@@ -26,7 +26,7 @@ const MovieListing = () => {
   return (
     <Container>
       <div className="movie-info movie-listing">
-        {data.length ? (
+        {data && data.length ? (
           <>
             <h3 className="movie-listing-title">
               Details of <b style={{ color: "green" }}>{movieName}</b> at{" "}

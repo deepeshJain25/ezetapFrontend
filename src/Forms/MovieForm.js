@@ -123,7 +123,7 @@ const MovieForm = (props) => {
     });
     setMovieData((prev) => {
       prev.theatres[locationId][indexOfTheatre] = data;
-      return { ...prev };
+      return prev;
     });
   };
 
@@ -143,7 +143,7 @@ const MovieForm = (props) => {
       }
       setMovieData((prev) => {
         prev.theatres = clone;
-        return { ...prev };
+        return prev;
       });
       return clone;
     });

@@ -49,6 +49,7 @@ const TheatreForm = (props) => {
                 });
               }}
               value={theatreData.theatre}
+              disabled={true}
             />
           </Form.Group>
           <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
