@@ -34,9 +34,9 @@ const TheatreListing = ({
         {!shows ? (
           <p style={{ color: "red" }}>NA</p>
         ) : (
-          shows.split(",").map((showTiming) => {
+          shows.split(",").map((showTiming, i) => {
             return (
-              <div className="theatre-listing-timing">
+              <div className="theatre-listing-timing" key={i}>
                 <span>{showTiming} hrs</span>
               </div>
             );

@@ -45,8 +45,10 @@ const MovieRow = ({ movieDetail, handleEdit, handleDelete }) => {
           }}
         >
           <option value={""}>Select a Location</option>
-          {location.map((loc) => (
-            <option value={loc.name}>{loc.name}</option>
+          {location.map((loc, i) => (
+            <option value={loc.name} key={i}>
+              {loc.name}
+            </option>
           ))}
         </Input>
       </td>

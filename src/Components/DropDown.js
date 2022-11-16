@@ -11,8 +11,10 @@ const DropDown = (props) => {
       <option value={""} selected={true}>
         Select a {props.type}
       </option>
-      {props.data.map((option) => (
-        <option value={option}>{option}</option>
+      {props.data.map((option, i) => (
+        <option value={option} key={i}>
+          {option}
+        </option>
       ))}
     </Input>
   );

@@ -169,8 +169,9 @@ const MovieTable = () => {
             </tr>
           </thead>
           <tbody>
-            {tableData.map((movie) => (
+            {tableData.map((movie, i) => (
               <MovieRow
+                key={i}
                 movieDetail={movie}
                 handleEdit={handleEdit}
                 handleDelete={openDeleteModal}

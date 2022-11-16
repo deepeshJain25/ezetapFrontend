@@ -268,8 +268,12 @@ const MovieForm = (props) => {
                 }}
               >
                 <option value="">Open this select menu</option>
-                {allGenres.map((genre) => {
-                  return <option value={genre}>{genre}</option>;
+                {allGenres.map((genre, i) => {
+                  return (
+                    <option value={genre} key={i}>
+                      {genre}
+                    </option>
+                  );
                 })}
               </Form.Select>
             </Form.Group>
@@ -287,9 +291,11 @@ const MovieForm = (props) => {
                   }}
                 >
                   <option value="">Select a Location</option>
-                  {allLocations.map((location) => {
+                  {allLocations.map((location, i) => {
                     return (
-                      <option value={location.name}>{location.name}</option>
+                      <option value={location.name} key={i}>
+                        {location.name}
+                      </option>
                     );
                   })}
                 </Form.Select>
@@ -305,10 +311,11 @@ const MovieForm = (props) => {
             </Button>
             <br />
             <br />
-            {locations.map((loc) => (
+            {locations.map((loc, i) => (
               <div
                 onClick={() => onLocationSelect(loc)}
                 className={getLocationClass(loc.id)}
+                key={i}
               >
                 {loc.name}
               </div>
@@ -354,9 +361,9 @@ const MovieForm = (props) => {
                   <p style={{ color: "red" }}>No Theatres</p>
                 )}
                 {allTheatres[selectedLocation.id] &&
-                  allTheatres[selectedLocation.id].map((theatreDetail) => {
+                  allTheatres[selectedLocation.id].map((theatreDetail, i) => {
                     return (
-                      <div className="theatre-details-content">
+                      <div className="theatre-details-content" key={i}>
                         <div className="theatre-name">{theatreDetail.name}</div>
 
                         <Button

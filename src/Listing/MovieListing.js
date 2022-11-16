@@ -43,7 +43,7 @@ const MovieListing = () => {
               </div>
               {data &&
                 data.map((data, i) => {
-                  return <TheatreListing data={data} index={i} />;
+                  return <TheatreListing data={data} index={i} key={i} />;
                 })}
             </div>
           </>
